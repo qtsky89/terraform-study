@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "wonhee-org"
+    workspaces {
+      name = "learn-terraform-aws"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
